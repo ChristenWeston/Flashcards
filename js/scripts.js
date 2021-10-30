@@ -1,15 +1,23 @@
 $(document).ready(function() {
-  $("button#lightBackground").click(function() {
-    $("body").removeClass();
-    $("body").addClass("lightBackground");
+  $(".clickable").click(function(){
+    $("#functions-hidden").slideToggle();
+    $("#functions-showing").slideToggle();
   });
 
-  $("button#darkBackground").click(function() {
-    $("body").removeClass();
-    $("body").addClass("darkBackground");
+  $(".clickable2").click(function(){
+    $("#methods-hidden").slideToggle();
+    $("#methods-showing").slideToggle();
   });
 
-  $("button#originalBackground").click(function() {
-    $("body").removeClass();
+  $(".clickable3").click(function(){
+    $("#arguments-hidden").slideToggle();
+    $("#arguments-showing").slideToggle();
   });
 });
+
+/*Functions
+Methods
+Arguments
+Parameters
+Return
+Chaining methods */
